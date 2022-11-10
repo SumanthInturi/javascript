@@ -61,7 +61,6 @@ fetch("https://jsonplaceholder.typicode.com/posts")
             }
         }
     });
-
 function deletePosts() {
     for (let i = 0; i < onDelete.length; i++) {
         let temp = document.getElementById(onDelete[i]);

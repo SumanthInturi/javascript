@@ -22,7 +22,6 @@ table{
     box-shadow: 0 10px 10px rgb(67, 40, 40);
 }
 th{
-    /* border: 1px solid #fff; */
     cursor: pointer;
     padding: 20px;
     text-align: left;
@@ -36,8 +35,6 @@ th{
     background-color: rgb(44,48,52);
 }
 tr,td{
-    /* border: 1px solid #fff; */
-    /* text-align: center; */
     cursor: pointer;
     color: #b3b3b3;
     padding: 20px;
