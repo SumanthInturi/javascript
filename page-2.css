@@ -1,11 +1,12 @@
 .postCard{
     background-color: #eef2f5;
     border-radius: 3px;
-    box-shadow: 0 1px px rgba(0, 0, 0,.05);
-    margin-bottom: 20px;
     padding: 20px;
     position: relative;
-    width: 50vw;
+    width: 20vw;
+    margin: 50px;
+    box-shadow: 10px 10px 5px #fbb0bb;
+    border-radius: 10px;
 }
 body{
     background: linear-gradient(45deg,#4158d0,#c850c0);
@@ -15,6 +16,20 @@ body{
     flex-direction: column;
     align-items: center;
 }
+.sourceText{
+    position: absolute;
+    right: 10px;
+    z-index: 2;
+    top: -20px;
+    font-size: x-large;
+}
+.bin{
+    position: absolute;
+    right: 50px;
+    z-index: 2;
+    top: -20px;
+    font-size: x-large;
+}
 button{
     position: fixed;
     top: 1rem;
@@ -23,6 +38,7 @@ button{
 }
 h1{
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin-top: 50px;
 }
 p{
     font-weight: 100;
@@ -30,14 +46,25 @@ p{
 }
 div{
     padding-left: 10px;
-	background-color: white;
-	border-radius: 4px;
-	box-shadow: 10px 10px 5px #aaaaaa;
+	border-radius: 10px;
+	display: flex;
+    flex-wrap: wrap;
+    font-size: xx-small;
+}
+.div-1{
+    box-shadow: 10px 5px 10px 5px gray;
+    margin-top: 10px;
 }
 .deleteButton{
     width: 100px;
     padding: 10px;
     border: none;
-    border-radius: 5px;
+    border-radius: 10px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.checkbox{
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    cursor: pointer;
 }

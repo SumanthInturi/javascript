@@ -26,6 +26,14 @@ fetch("https://jsonplaceholder.typicode.com/posts")
                     console.log(onDelete);
                 };
                 temp.appendChild(checkBox);
+                const e = document.createElement("h5");
+                e.setAttribute("class","sourceText");
+                e.innerHTML=`<i class="fa-solid fa-pen-to-square"></i>`;
+                temp.appendChild(e);
+                const f = document.createElement("h5");
+                f.setAttribute("class" , "bin");
+                f.innerHTML = `<i class="fa-solid fa-trash"></i>`;
+                temp.appendChild(f);
                 const title = document.createElement("h1");
                 const body = document.createElement("p");
                 title.innerHTML = "Title: " + posts[i].title;
@@ -43,6 +51,7 @@ fetch("https://jsonplaceholder.typicode.com/posts")
                     .then((json) => {
                         for (let j = 0; j < 3; j++) {
                             const comment = document.createElement("div");
+                            comment.className = "div-1";
                             const name = document.createElement("h3");
                             const email = document.createElement("p");
                             const body = document.createElement("p");
@@ -55,7 +64,7 @@ fetch("https://jsonplaceholder.typicode.com/posts")
                             temp.appendChild(comment);
                         }
                     });
-                temp.appendChild(document.createElement("hr"));
+                
                 const postsDiv = document.querySelector(".postsSection");
                 postsDiv.appendChild(temp);
             }
